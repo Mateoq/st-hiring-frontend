@@ -27,6 +27,16 @@ All dependencies are already installed — no need to add them.
 5. Run `yarn dev` to start the development server
 
 The Vite dev server proxies `/events` and `/settings` to the backend automatically, so no extra configuration is needed.
+For deployed environments, copy `.env.example` to the environment-specific Vite file and set
+`VITE_API_BASE_URL` to the backend origin.
+
+## Available commands
+
+- `yarn dev` — start the development server
+- `yarn build` — type-check and create a production build
+- `yarn lint` — run ESLint
+- `yarn test` — run the automated test suite once
+- `yarn test:watch` — run tests in watch mode
 
 ## Tasks
 
